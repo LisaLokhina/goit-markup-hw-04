@@ -218,6 +218,7 @@ img {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 /* What we do styles */
 .our-expertise .container {
