@@ -62,7 +62,6 @@ img {
   display: none;
 }
 .site-nav,
-.auth-nav,
 .filter-button,
 .project-thumbnails {
   display: inline-block;
@@ -109,6 +108,9 @@ img {
   display: flex;
   align-items: center;
 }
+.auth-nav {
+  display: flex;
+}
 .anchor {
   color: var(--main-color);
   text-decoration: none;
@@ -135,6 +137,14 @@ img {
 }
 .auth-nav .menu-item {
   margin-left: 50px;
+}
+.button-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.auth-nav .anchor {
+  display: flex;
+  align-items: center;
 }
 /* Main styles */
 
