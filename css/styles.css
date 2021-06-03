@@ -7,6 +7,7 @@
   --black: #000000;
   --background-dark: #2f303a;
   --light-grey: #f5f4fa;
+  --social-media-grey: #afb1b8;
 }
 
 body {
@@ -259,7 +260,35 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-
+.position {
+  margin-bottom: 16px;
+}
+.social-media-logo {
+  fill: currentColor;
+}
+.social-media-anchor {
+  color: var(--social-media-grey);
+  height: 20px;
+}
+.our-team .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.our-team .icon:not(:last-child) {
+  margin-right: 10px;
+}
+.our-team .icon:hover,
+.our-team .icon:focus {
+  background-color: var(--brand-color);
+}
+.our-team .icon:hover .social-media-anchor,
+.our-team .icon:focus .social-media-anchor {
+  color: var(--white);
+}
 /* Portfolio styles */
 .section .container {
   flex-direction: column;
