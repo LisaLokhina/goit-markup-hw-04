@@ -289,6 +289,20 @@ img {
 .our-team .icon:focus .social-media-anchor {
   color: var(--white);
 }
+
+/* Our loyal clients styles */
+.section.our-clients {
+}
+.client-block {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-block:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Portfolio styles */
 .section .container {
   flex-direction: column;
