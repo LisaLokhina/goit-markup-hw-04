@@ -84,6 +84,7 @@ img {
   background-color: var(--brand-color);
   color: var(--white);
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 .button:hover,
@@ -150,7 +151,14 @@ img {
 
 /* Hero styles */
 .hero {
-  background-color: var(--background-dark);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-image.jpg');
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .section.hero {
   padding: 0;
@@ -176,8 +184,12 @@ img {
 .modal-btn {
   margin-top: 30px;
   padding: 10px 32px;
-  border-radius: 4px;
 }
+.modal-btn:hover,
+.modal-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* Our benefits styles */
 .caption {
   color: var(--header-color);
@@ -197,7 +209,15 @@ img {
 .our-benefits.section {
   padding-bottom: 0;
 }
-
+.benefit-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
 /* What we do styles */
 .our-expertise .container {
   flex-direction: column;
@@ -278,22 +298,19 @@ img {
 }
 
 .filter-button {
-  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.6;
   background-color: #f5f4fa;
   color: var(--header-color);
-  border: none;
-  cursor: pointer;
   padding: 6px 22px;
   margin-right: 8px;
-  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--brand-color-hover);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button.active {
